@@ -31,16 +31,23 @@ const DUMMY_EVENTS = [
   },
 ];
 
+//Dummy data to simulate pulling events from API
+
 export function getFeaturedEvents() {
   return DUMMY_EVENTS.filter((event) => event.isFeatured);
 }
+
+//Function filters through events, looks for isFeatured property
 
 export function getAllEvents() {
   return DUMMY_EVENTS;
 }
 
+//Simply returns all the events
+
 export function getFilteredEvents(dateFilter) {
   const { year, month } = dateFilter;
+  //Pulls year and month parameter from called function elsewhere
 
   let filteredEvents = DUMMY_EVENTS.filter((event) => {
     const eventDate = new Date(event.date);
@@ -49,9 +56,15 @@ export function getFilteredEvents(dateFilter) {
     );
   });
 
+  //Creates a new Date object, and runs getFullYear and getMonth to return the
+  //Written year and month for each dummy event, then filters the dummy data
+  //against the year and month parameter from the function call
+
   return filteredEvents;
 }
 
 export function getEventById(id) {
   return DUMMY_EVENTS.find((event) => event.id === id);
 }
+
+//filters through events by their id, provided in dummy data
