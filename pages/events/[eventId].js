@@ -1,3 +1,4 @@
+import ErrorAlert from "@/components/UI/error-alert";
 import EventContent from "@/components/event-detail/event-content";
 import EventLogistics from "@/components/event-detail/event-logistics";
 import EventSummary from "@/components/event-detail/event-summary";
@@ -11,7 +12,7 @@ function EventDetail() {
   const event = getEventById(eventId);
 
   if (!event) {
-    return <p>No event found!</p>;
+    return <ErrorAlert>No event found!</ErrorAlert>;
   }
 
   return (
