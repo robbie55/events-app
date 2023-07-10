@@ -10,10 +10,13 @@ function EventDetail() {
 
   const eventId = router.query.eventId;
   const event = getEventById(eventId);
+  //grabbing event ID using URL and rendering that specific event using
+  //helped function in dummy-data.js
 
   if (!event) {
     return <ErrorAlert>No event found!</ErrorAlert>;
   }
+  //guard clause in case user types in an invalid event Id in the url
 
   return (
     <>

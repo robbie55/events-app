@@ -42,4 +42,7 @@ function EventItem(props) {
   );
 }
 
+//returns a reuseable event item which is used in events-list to map
+//our dummy events
+
 export default EventItem;

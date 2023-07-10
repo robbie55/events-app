@@ -10,5 +10,7 @@ function MyApp({ Component, pageProps }) {
 }
 
 // root component where different componenets and pages are initially rendered
+//wrapping <Component>, which is where all of our pages and components are rendered
+//in a layout to have a nav bar on the top of any rendered page
 
 export default MyApp;

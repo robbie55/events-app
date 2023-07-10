@@ -9,6 +9,9 @@ function ResultsTitle(props) {
     year: "numeric",
   });
 
+  //once again, using toLocaleDateString (javascript) to format our date
+  //in a much more presentable way
+
   return (
     <section className={classes.title}>
       <h1>Events in {humanReadableDate}</h1>
@@ -16,5 +19,8 @@ function ResultsTitle(props) {
     </section>
   );
 }
+
+//title used over filtered events page, [...slug].js
+//used to style and display the date at which the events were filtered
 
 export default ResultsTitle;

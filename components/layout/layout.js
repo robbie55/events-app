@@ -9,4 +9,6 @@ function Layout(props) {
   );
 }
 
+//layout used to head all pages, simple navbar alongside main-header.js
+
 export default Layout;

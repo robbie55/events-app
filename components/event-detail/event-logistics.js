@@ -11,6 +11,8 @@ function EventLogistics(props) {
   });
   const addressText = address.replace(", ", "\n");
 
+  //Formatting the date and address to make more presentable
+
   return (
     <section className={classes.logistics}>
       <div className={classes.image}>
@@ -27,5 +29,7 @@ function EventLogistics(props) {
     </section>
   );
 }
+
+//Component used to show logistics of individual event, [eventId].js
 
 export default EventLogistics;

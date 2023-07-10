@@ -19,4 +19,7 @@ function MainHeader() {
   );
 }
 
+//"meat" of the navbar, friendly UI along with links to redirect to home ("/")
+//or event page ("/events")
+
 export default MainHeader;

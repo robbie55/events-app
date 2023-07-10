@@ -8,4 +8,8 @@ function LogisticsItem(props) {
   );
 }
 
+//item used for individual logistics, used in event-logistics.js
+//main purpose is to dynamically style said logistics for individual
+//event page, [eventId].js
+
 export default LogisticsItem;

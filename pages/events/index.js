@@ -11,6 +11,9 @@ function EventsPage() {
 
     router.push(fullPath);
   }
+  //grabbing all events in dummy-data.js using helper function in the same file,
+  //passing down function into events-search to grab the selected month and year
+  //and using that info to first construct the filtered URL then push it using router
 
   return (
     <>

@@ -1,4 +1,4 @@
-import classes from './event-summary.module.css';
+import classes from "./event-summary.module.css";
 
 function EventSummary(props) {
   const { title } = props;
@@ -9,5 +9,8 @@ function EventSummary(props) {
     </section>
   );
 }
+
+//another styling component to wrap description of individual event on its
+//specific page, [eventId].js
 
 export default EventSummary;

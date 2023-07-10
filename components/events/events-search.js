@@ -16,6 +16,9 @@ function EventsSearch(props) {
     props.onSearch(selectedYear, selectedMonth);
   }
 
+  //Events search submit handler, takes in chosen input data using useRef's
+  //and a function passed down via props in order to pass data up files
+
   return (
     <form className={classes.form} onSubmit={submitHandler}>
       <div className={classes.controls}>
@@ -48,5 +51,9 @@ function EventsSearch(props) {
     </form>
   );
 }
+
+//On-page form to filter through month and year of posted events
+//Options have values corresponding to months, and as of now only
+//Two options for years
 
 export default EventsSearch;
